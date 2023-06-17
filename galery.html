@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IZURA</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/logo.jpg" alt="Logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="signup.html"><button>Sign Up</button></a>
+    </header>
+    
+	<center>
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slides images start-->
+            <div class="slide first">
+                <img src="img/pc1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/makanan1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/minuman1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/game1.jpg" alt="">
+            </div>
+            <!--slide image end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+           <!--automatic navigation end-->
+        <!--manual navigaton start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <!--image slider end-->
+    <script type="text/javascript">
+           var counter = 1;
+           setInterval(function(){
+                  document.getElementById('radio' + counter).checked = true
+                  counter++;
+                  if(counter > 4){
+                         counter =1;
+                  }
+           }, 15000);
+    </script>
+	</center>
+
+    <!-- kategori -->
+	<section class="kategori">
+		<div class="container">
+			<h3>KATEGORI</h3>
+			<div class="box">
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-hamburger"></i></div>
+					<h4>MAKANAN</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-mobile-alt"></i></div>
+					<h4>ELECTRONIC</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-tshirt"></i></div>
+					<h4>FASHION</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-couch"></i></div>
+					<h4>ITEM</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-paw"></i></div>
+					<h4>PET</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-gamepad"></i></div>
+					<h4>GAME</h4>
+				</div>
+				<div class="col-7">
+					<div class="icon"><i class="fas fa-random"></i></div>
+					<h4>RANDOM</h4> <br><br>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- recomendasi -->
+	<div class="rekomendasi">
+		<h3>REKOMENDASI</h3>
+	</div>
+
+	<!-- beli beli -->
+	<div class='gambar'>
+
+	<div class='foto'>
+		<img src='img/jam1.jpg'>
+		<h2>Jam Tangan R</h2>
+		<p>Rp.10.000.000,00</p> <br>
+		<a href=''>Buy Now</a>
+	</div>
+
+	<div class='foto'>
+			<img src='img/baju1.jpg'>
+			<h2>Baju Panda</h2>
+			<p>Rp.25.000,00</p> <br>
+			<a href=''>Buy Now</a>
+		</div>
+
+		<div class='foto'>
+				<img src='img/baju2.jpg'>
+				<h2>Baju GG</h2>
+				<p>Rp.30.000,00</p> <br>
+				<a href=''>Buy Now</a>
+			</div>
+
+			<div class='foto'>
+					<img src='img/laptop1.jpg'>
+					<h2>Laptop Gaming</h2>
+					<p>Rp.30.999.999,00</p><br>
+					<a href=''>Buy Now</a>
+				</div>
+
+				<div class='foto'>
+						<img src='img/laptop2.jpg'>
+						<h2>Laptop Apel</h2>
+						<p>Rp.20.999.999,00</p><br>
+						<a href=''>Buy Now</a>
+					</div>
+
+					<div class='foto'>
+							<img src='img/sepatu1.jpg'>
+							<h2>Sepatu Pink</h2>
+							<p>Rp.250.999,00</p><br>
+							<a href=''>Buy Now</a>
+						</div>
+
+						<div class='foto'>
+								<img src='img/sepatu2.jpg'>
+								<h2>Sepatu Sport</h2>
+								<p>Rp.300.999,00</p><br>
+								<a href=''>Buy Now</a>
+							</div>
+
+							<div class='foto'>
+									<img src='img/mouse.jpg'>
+									<h2>Mouse B</h2>
+									<p>Rp.90.000,00</p><br>
+									<a href=''>Buy Now</a>
+								</div>
+
+								<div class='foto'>
+										<img src='img/keyboard.jpg'>
+										<h2>Keyboard Gaming</h2>
+										<p>Rp.240.000,00</p><br>
+										<a href=''>Buy Now</a>
+									</div>
+
+									<div class='foto'>
+											<img src='img/tas1.jpg'>
+											<h2>Tas Big</h2>
+											<p>Rp.490.000,00</p><br>
+											<a href=''>Buy Now</a>
+										</div>
+
+										<div class='foto'>
+												<img src='img/tas2.jpg'>
+												<h2>Tas P</h2>
+												<p>Rp.120.000,00</p><br>
+												<a href=''>Buy Now</a>
+											</div>
+
+											<div class='foto'>
+													<img src='img/Hoodie.jpg'>
+													<h2>Hoodie Kuning</h2>
+													<p>Rp.260.000,00</p><br>
+													<a href=''>Buy Now</a>
+												</div> <br><br><br><br><br><br>
+	</div>
+
+	<a href="checkout.html" class="tr">Checkout</a>
+
+
+    <section class="footer">
+        <div class="footer-left">
+            <h3>Payment Method</h3>
+            <div class="credit-cards">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/paypal.png" alt="">
+            </div>
+            <p class="footer-copyright">&copy2022 RANDIzuraa</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Indonesia</span>Yogyakarta</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+62 881-8629-220</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">Randi@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-media">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </section>
+</body>
+</html>

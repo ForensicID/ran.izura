@@ -1,0 +1,92 @@
+@import url('https://fonts.google.com/css?familyMontserrat:500');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f3efb3;
+}
+
+
+li, a, button{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10%;
+    background-color: #fff9a8;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0,3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #f18137;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+footer{
+    bottom: 0;
+}
+
+.footer{
+    background-color: #fff9a8;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 50px 50px 60px 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .footer-left{
+    width: 30%;
+}

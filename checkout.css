@@ -1,0 +1,284 @@
+@import url('https://fonts.google.com/css?familyMontserrat:500');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(45deg, #f4bf00, #f18137);
+}
+
+
+li, a, button{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10%;
+    background-color: #fff9a8;
+    width: 100%;
+}
+
+.logo{
+    cursor: pointer;
+    width: 25px;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0,3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #f18137;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer{
+    background-color: #fff9a8;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer{
+        position: static;
+    }
+}
+
+.footer .footer-left{
+    width: 40%;
+}
+
+.footer h3{
+    color: black;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.footer .footer-left img{
+    width: 20%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards{
+    width: 100%;
+}
+
+.footer .footer-copyright{
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+.footer .footer-center i{
+    color: black;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 5px 15px;
+}
+
+.footer .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p{
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a{
+    color: green;
+    text-decoration: none;
+}
+
+.footer .footer-media{
+    margin-top: 25px;
+}
+
+.footer .footer-media a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover{
+    background-color: rgb(255, 106, 0)
+}
+
+@media (max-widht:880px) {
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+}
+
+.footer .footer-center i{
+    margin-left: 0px;
+}
